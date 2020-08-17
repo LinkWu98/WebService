@@ -1,0 +1,9 @@
+# Project exclude paths
+.idea
+/jaxws-client/target/
+/jaxws-server/target/
+/spring-jaxws-client/target/
+/spring-jaxws-server/target/
+/webservice-api/target/
+WebService资料包
+*.iml

@@ -1,0 +1,77 @@
+2020-08-17 22:20:11,226 0      [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:8001/webservice
+2020-08-17 22:20:11,266 40     [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2020-08-17 22:20:11,456 230    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:8001
+2020-08-17 22:28:28,892 0      [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:8001/webservice
+2020-08-17 22:28:28,933 41     [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2020-08-17 22:28:29,121 229    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:8001
+2020-08-17 22:28:34,811 5919   [tp1891502635-33] INFO  terceptor.LoggingInInterceptor  - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:8001/webservice/userService/user
+Encoding: ISO-8859-1
+Http-Method: POST
+Content-Type: application/xml
+Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[125], content-type=[application/xml], Host=[localhost:8001], Pragma=[no-cache], User-Agent=[Apache CXF 3.0.1]}
+Payload: <?xml version="1.0" encoding="UTF-8" standalone="yes"?><User><city>ChangZhou</city><id>1</id><username>Link</username></User>
+--------------------------------------
+2020-08-17 22:28:34,976 6084   [tp1891502635-33] INFO  erceptor.LoggingOutInterceptor  - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 204
+Content-Type: 
+Headers: {Date=[Mon, 17 Aug 2020 14:28:34 GMT], Content-Length=[0]}
+--------------------------------------
+2020-08-17 22:38:26,377 0      [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:8001/webservice
+2020-08-17 22:38:26,418 41     [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2020-08-17 22:38:26,615 238    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:8001
+2020-08-17 22:38:34,654 8277   [qtp112302969-33] INFO  terceptor.LoggingInInterceptor  - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:8001/webservice/userService/user/1
+Http-Method: GET
+Content-Type: application/xml
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/xml], Host=[localhost:8001], Pragma=[no-cache], User-Agent=[Apache CXF 3.0.1]}
+--------------------------------------
+2020-08-17 22:38:34,800 8423   [qtp112302969-33] INFO  erceptor.LoggingOutInterceptor  - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Mon, 17 Aug 2020 14:38:34 GMT]}
+Payload: {"User":""}
+--------------------------------------
+2020-08-17 22:39:38,372 71995  [qtp112302969-34] INFO  terceptor.LoggingInInterceptor  - Inbound Message
+----------------------------
+ID: 2
+Address: http://localhost:8001/webservice/userService/user/1
+Http-Method: GET
+Content-Type: application/xml
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/xml], Host=[localhost:8001], Pragma=[no-cache], User-Agent=[Apache CXF 3.0.1]}
+--------------------------------------
+2020-08-17 22:39:38,373 71996  [qtp112302969-34] INFO  erceptor.LoggingOutInterceptor  - Outbound Message
+---------------------------
+ID: 2
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Mon, 17 Aug 2020 14:39:38 GMT]}
+Payload: {"User":""}
+--------------------------------------
+2020-08-17 22:39:52,256 0      [           main] INFO  apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:8001/webservice
+2020-08-17 22:39:52,297 41     [           main] INFO  rg.eclipse.jetty.server.Server  - jetty-8.1.15.v20140411
+2020-08-17 22:39:52,481 225    [           main] INFO  jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:8001
+2020-08-17 22:39:55,155 2899   [qtp112302969-35] INFO  terceptor.LoggingInInterceptor  - Inbound Message
+----------------------------
+ID: 1
+Address: http://localhost:8001/webservice/userService/user/1
+Http-Method: GET
+Content-Type: application/xml
+Headers: {Accept=[application/json], Cache-Control=[no-cache], connection=[keep-alive], content-type=[application/xml], Host=[localhost:8001], Pragma=[no-cache], User-Agent=[Apache CXF 3.0.1]}
+--------------------------------------
+2020-08-17 22:39:55,302 3046   [qtp112302969-35] INFO  erceptor.LoggingOutInterceptor  - Outbound Message
+---------------------------
+ID: 1
+Response-Code: 200
+Content-Type: application/json
+Headers: {Content-Type=[application/json], Date=[Mon, 17 Aug 2020 14:39:55 GMT]}
+Payload: {"User":{"city":"ChangZhou","id":1,"username":"Link"}}
+--------------------------------------

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jaxws="http://cxf.apache.org/jaxws" xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+    <!--  Spring 整合 CXF 发布服务
+           address: 服务映射路径 (一个类一个路径, HelloService - /hello)
+           serviceBean: 服务实现类
+           服务完整访问地址 : http://localhost:8080/spring-jaxws/webservice/hello( 服务器ip+端口+工程名+CXFServlet映射路径+服务路径 )
+    -->
+    <jaxws:server address="/hello">
+        <jaxws:serviceBean>
+            <bean class="cn.link.service.impl.HelloServiceImpl"/>
+        </jaxws:serviceBean>
+    </jaxws:server>
+
+
+</beans>
