@@ -18,6 +18,7 @@
         <module>jaxrs-server</module>
         <module>jaxrs-client</module>
         <module>spring-jaxrs-server</module>
+        <module>spring-jaxrs-client</module>
     </modules>
 
     <dependencies>

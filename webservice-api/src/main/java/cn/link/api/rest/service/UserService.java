@@ -10,7 +10,7 @@ import javax.ws.rs.*;
  * @date 2020/8/17 22:04
  */
 @Path("/userService") //访问当前服务接口的映射路径
-@Produces("*/*")
+@Produces("*/*") //服务器支持的返回的数据格式类型
 public interface UserService {
 
     /**
