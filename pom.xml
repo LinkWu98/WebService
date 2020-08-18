@@ -87,6 +87,13 @@
             <version>3.0.1</version>
         </dependency>
 
+        <!-- REST 的 wadl 描述-->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-rs-service-description</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+
         <!-- 使 webservice 可传递json格式数据 -->
         <dependency>
             <groupId>org.codehaus.jettison</groupId>
